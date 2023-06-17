@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./src/main.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-800">
+    <h1 class="flex justify-center items-center mt-8">
+      <a href="/">
+        <img src="./img/logo.png" alt="logo" />
+      </a>
+    </h1>
+
+    <nav class="mt-8">
+      <ul
+        class="flex justify-center items-center gap-6 text-center"
+        id="nav-container"
+      >
+        <li class="w-20 cursor-pointer img-tshirt">
+          <img
+            src="./img/blue_t.png"
+            alt="tshirt"
+            data-key="clothes"
+            data-value="tshirt"
+          />
+        </li>
+
+        <li class="w-20 cursor-pointer img-pant">
+          <img
+            src="./img/blue_p.png"
+            alt="pant"
+            data-key="clothes"
+            data-value="pant"
+          />
+        </li>
+
+        <li class="w-20 cursor-pointer img-skirt">
+          <img
+            src="./img/blue_s.png"
+            alt="skirt"
+            data-key="clothes"
+            data-value="skirt"
+          />
+        </li>
+
+        <li
+          class="w-20 rounded-sm cursor-pointer bg-blue-400 py-2 btn-blue"
+          data-key="color"
+          data-value="blue"
+        >
+          Blue
+        </li>
+
+        <li
+          class="w-20 rounded-sm cursor-pointer bg-yellow-400 py-2 btn-yellow"
+          data-key="color"
+          data-value="yellow"
+        >
+          Yellow
+        </li>
+
+        <li
+          class="w-20 rounded-sm cursor-pointer bg-red-400 py-2 btn-pink"
+          data-key="color"
+          data-value="pink"
+        >
+          Pink
+        </li>
+      </ul>
+    </nav>
+
+    <section class="mt-8">
+      <ul
+        id="product-continer"
+        class="h-[480px] overflow-auto flex flex-col items-center"
+      ></ul>
+    </section>
+  </body>
+</html>
